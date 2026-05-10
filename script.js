@@ -27,3 +27,13 @@ window.onload = () => {
   runTrack(".track-right", "right", 60);
   //   runTrack(".track-left", "left", 50);
 };
+
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
