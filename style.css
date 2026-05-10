@@ -264,20 +264,27 @@
 @media (min-width: 956px) {
   .navbar {
     background-color: transparent;
+    transition: 0.3s;
+  }
+  .navbar.sticky {
+    background-color: blue;
+    padding: 10px;
   }
   .nav-link {
     margin-right: 30px;
     text-transform: uppercase;
-    color: white;
-  }
-
-  .navbar .navbar-brand {
-    color: white;
-    font-size: 40px;
   }
 
   .navbar-brand,
   .nav-link {
+    color: blue !important;
+  }
+
+  .nav-link.white {
+    color: white !important;
+  }
+
+  .navbar-brand.white {
     color: white !important;
   }
 
