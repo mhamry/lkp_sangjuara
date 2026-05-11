@@ -65,6 +65,7 @@
 .jumbotron .carousel img {
   width: 100%;
   height: 70vh;
+  object-fit: cover;
 }
 .jumbotron-about {
   background-image: url(img/about.png);
@@ -352,6 +353,7 @@
   .jumbotron .carousel img {
     height: 100vh;
     width: 100%;
+    object-fit: cover;
   }
 
   .container .display-4 {
