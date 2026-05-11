@@ -333,7 +333,11 @@
     display: inline-block;
   }
 
-  .navbar .nav-link:hover::after {
+  .navbar .nav-link:hover {
+    color: green !important;
+    transform: scale(1.02);
+  }
+  /* .navbar .nav-link:hover::after {
     content: "";
     width: 70%;
     border-bottom: 5px solid #0b63dc;
@@ -342,6 +346,19 @@
     display: block;
     padding-bottom: 6px;
     margin-top: -11px;
+  } */
+  .navbar .nav-link.underline::after {
+    content: "";
+    width: 70%;
+    border-bottom: 5px solid #0b63dc;
+    color: blue;
+    margin: auto;
+    display: block;
+    padding-bottom: 6px;
+    margin-top: -6px;
+  }
+  .navbar .nav-link.underline.white::after {
+    border-bottom: 5px solid white;
   }
 
   .jumbotron {

@@ -33,6 +33,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   const linkPage = link.getAttribute("href");
   if (linkPage === currentPage) {
     link.classList.add("active");
+    link.classList.add("underline");
   }
 });
 
@@ -41,11 +42,13 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 const navbar = document.querySelector(".navbar");
 const navbarBrand = document.querySelector(".navbar-brand");
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+const underlineLinks = document.querySelector(".navbar .nav-link.underline");
 
 window.onscroll = () => {
   if (window.scrollY > 20) {
     navbar.classList.add("sticky");
     navbarBrand.classList.add("white");
+    underlineLinks.classList.add("white");
     navLinks.forEach((link) => {
       link.classList.add("white");
     });
