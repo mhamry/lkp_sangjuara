@@ -43,6 +43,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 const navbar = document.querySelector(".navbar");
 const navbarBrand = document.querySelector(".navbar-brand");
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
 window.onscroll = () => {
   if (window.scrollY > 20) {
     navbar.classList.add("sticky");
