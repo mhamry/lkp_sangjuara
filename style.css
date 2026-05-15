@@ -248,14 +248,6 @@
     transform: translateX(0);
   }
 }
-@keyframes run-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(var(--move));
-  }
-}
 
 /* galery */
 
